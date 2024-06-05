@@ -46,6 +46,22 @@ def continua():
         else:
             print("Digite S ou N ")
     return acabou
+
+def apresentapalavra(letras,palavras):
+    npalavra="_ "*len(palavras)
+    for l in range(0,len(letras)):
+        print(letras[l])
+        for p in range(0,len(palavras)):
+            ##print(palavras[p])
+            if letras[l]==palavras[p]:
+                print(letras[l])
+                print(l)
+                print(p)
+    return npalavra
+
+def sorteiapalavra ():
+    lista = ["amor","paz","prosperidade","ajuda","salvação"]
+    return random.choice (lista)
      
 ##jogar = True
 ##x=0
@@ -56,18 +72,7 @@ def continua():
 forca(0)
 
 
-def sorteiapalavra ():
-    lista = ["amor","paz","prosperidade","ajuda","salvação"]
-    return random.choice (lista)
-
 import random
-
-
-
-
-
-
 print(sorteiapalavra())
 
-
-
+print(apresentapalavra("abx","amor"))
