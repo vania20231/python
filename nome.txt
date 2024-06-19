@@ -1,8 +1,20 @@
 with open("nome.txt", "r") as arquivo:
-    txt = arquivo.read()
+    while True:
+        txt = arquivo.readline()
+        if not txt:
+            break
+        print(txt)
 
-print(txt)    
+with open("nome.txt", "r") as f:
+    listatexto = f.readline()
 
+for texto in listatexto:
+    print(texto) 
+
+with open("nome2.txt", "w") as f:
+    f.write('Vania\n')
+    f.write('Rodakoski\n')
+    f.write('Barros\n')
 
 
 
