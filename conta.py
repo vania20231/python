@@ -7,8 +7,8 @@ def saldo(conta):
     print("titular:"+conta["titular"])
     print("saldo:{}".format(conta["saldo"]))
 def deposito(conta,valor):
-    
-    conta +=valor
+
+    conta["saldo"] +=valor
     
 conta00= cria_conta(1234, "Arisberto", 50.0, 100.0)
 conta01= cria_conta(4321,"Leandro", 50.0,100.0)
